@@ -1,0 +1,45 @@
+/* Creating global variable */
+:root{
+    --color: rgb(98, 244, 110);
+    --seccolor: rgb(153, 153, 236);
+    --defpad: 23px;
+    --defop: 0.2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: var(--color);
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    /* opacity: 0.3; */
+    /* opacity: var(--defop); */
+
+    list-style-type: none;
+    /* padding: 34px; */
+    /* Using variable 'var(--defpad)' for padding */
+    padding: var(--defpad);
+    border: 2px solid var(--seccolor);
+}
+
+ul li:first-child{
+    /* making global variable to local variable */
+    --color: rgb(237, 175, 95);
+    /* override variable vlues */
+    background-color: var(--color);
+
+    /* Blue color will be used if 'var(--color)' values not supported or not available in code */
+    /* background-color: var(--color, blue); */
+}
+
+.container{
+    background-color: var(--seccolor);
+}

@@ -1,0 +1,37 @@
+/* :root {
+  --primary-color: #ad5afacc;
+  --text-color: white;
+  --secondary-color: #e3cff5cc;
+} */
+
+:root {
+  --primary-color: #25e63fcc;
+  --text-color: white;
+  --secondary-color: #94dce7cc;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+nav {
+  background-color: var(--primary-color);
+  padding: 12px;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  padding: 23px;
+  font-weight: bolder;
+}
+
+ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
